@@ -1,5 +1,5 @@
 const { createApp } = Vue;
-const apiUri = 'http://localhost/php-dischi-json/discs.php';
+const apiUri = 'http://localhost/php-dischi-json/index.php';
 const app = createApp({
     data() {
         return {

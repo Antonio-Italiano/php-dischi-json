@@ -72,8 +72,3 @@ $discs = [
         'genre' => 'Pop'
     ],
 ];
-
-# I convert writing to JSON
-header('Content-Type: application/json');
-# convert to json and mold to $disc
-echo json_encode($discs);
