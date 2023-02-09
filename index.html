@@ -21,12 +21,27 @@
 </head>
 
 <body>
-    <div id="root">
+    <div id="app">
         <header>
             <div class="container p-2">
                 <img class="logo" src="" alt="Logo Spotify">
             </div>
         </header>
+        <main>
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div v-for="(disc, i) in discs" :key="i" class="card-cs m-5 rounded text-center text-white p-4">
+                        <figure class="w-100 d-flex justify-content-center">
+                            <img :src="disc.poster" alt="" class="w-75">
+                        </figure>
+                        <h5>{{disc.title}}</h5>
+                        <p>{{disc.author}}</p>
+                        <h5>{{disc.year}}</h5>
+                        <p>{{disc.genre}}</p>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
 </body>
 

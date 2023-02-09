@@ -10,3 +10,9 @@ body {
 .logo {
     height: 8vh;
 }
+
+.card-cs {
+    width: 25%;
+    min-height: 200px;
+    background-color: #112030;
+}
