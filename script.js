@@ -1,5 +1,5 @@
 const { createApp } = Vue;
-const apiUri = 'http://localhost/php-dischi-json/index.php';
+const apiUri = 'http://localhost/php-dischi-json/api.php';
 const app = createApp({
     data() {
         return {
@@ -8,10 +8,6 @@ const app = createApp({
         }
     },
     methods: {
-        index(i) {
-            return console.log(this.discs[i].name);
-
-        }
     },
     created() {
         axios.get(apiUri).then(res => {
@@ -20,4 +16,4 @@ const app = createApp({
     },
 })
 
-app.mount('#app')
+app.mount('#app');

@@ -70,5 +70,5 @@ $discs = [
         'year' => 1987,
         'poster' => 'https://m.media-amazon.com/images/I/51-c9KBefDL._AC_.jpg',
         'genre' => 'Pop'
-    ],
+    ],    
 ];

@@ -30,7 +30,8 @@
         <main>
             <div class="container">
                 <div class="row justify-content-between">
-                    <div v-for="(disc, i) in discs" :key="i" class="card-cs p-0 m-5 rounded text-center text-white">
+                    <div v-for="(disc, i) in discs" :key="disc.title"
+                        class="card-cs p-0 m-5 rounded text-center text-white">
                         <a href="#" class="p-4">
                             <figure class="w-100 d-flex justify-content-center">
                                 <img :src="disc.poster" alt="" class="w-75">
